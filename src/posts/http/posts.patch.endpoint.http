@@ -1,0 +1,15 @@
+PATCH http://localhost:3000/posts
+Content-Type: application/json
+
+{
+  "title": "What's new with NestJS with typescript",
+  "postType": "post",
+  "slug": "new-with-nestjs-hehhe",
+  "status": "draft",
+  "content": "test content",
+  "schema": "{\"name\": \"andre\"}",
+  "featuredImageUrl": "http://localhost.com/images/image1.png",
+  "publishOn": "2024-03-16T07:46:32+0000",
+  "tags": [1, 3],
+  "id": 7
+}

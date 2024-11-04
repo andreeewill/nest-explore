@@ -1,0 +1,19 @@
+POST http://localhost:3000/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImVtYWlsIjoibWFya0Bkb2UuY29tIiwiaWF0IjoxNzMwNjQ0MDQwLCJleHAiOjE3MzA2NDc2NDAsImF1ZCI6ImxvY2FsaG9zdDozMDAwIiwiaXNzIjoibG9jYWxob3N0OjMwMDAifQ.2LP1uIeHaiC7PQCq_w-YB1LvA159fBmQPug9NQkdiAw
+
+{
+  "title": "What's new with NestJS three",
+  "postType": "post",
+  "slug": "new-with-nestjs-16",
+  "status": "draft",
+  "content": "test content",
+  "schema": "{\"name\": \"andre\"}",
+  "featuredImageUrl": "http://localhost.com/images/image1.png",
+  "publishOn": "2016-09-18T17:34:02.666Z",
+  // "tags": ["nestjs", "typescript"],
+  "metaOptions": {
+    "metaValue": "{\"siderbarEnabled\": true, \"footerActive\": true}"
+  },
+  "tags" : [1]
+}

@@ -1,0 +1,10 @@
+POST http://localhost:3000/auth/refresh-token
+accept-encoding: gzip, deflate, br
+accept: */*
+content-length: 58
+content-type: application/json
+user-agent: httpyac
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImlhdCI6MTczMDkwMzUzOSwiZXhwIjoxNzMwOTg5OTM5LCJhdWQiOiJsb2NhbGhvc3Q6MzAwMCIsImlzcyI6ImxvY2FsaG9zdDozMDAwIn0.AmYK2jWmxqc25gKpc1O54ZZLlmXoJXM5HVOKAGtgfIo"
+}

@@ -14,6 +14,8 @@ import {
   DefaultValuePipe,
   UseGuards,
   SetMetadata,
+  UseInterceptors,
+  ClassSerializerInterceptor,
   // ValidationPipe, global pipe is used instead
 } from '@nestjs/common';
 import { ApiOperation, ApiQuery, ApiResponse, ApiTags } from '@nestjs/swagger';
@@ -68,6 +70,7 @@ export class UsersController {
 
   @Post()
   @Auth(AuthType.None)
+  @UseInterceptors(ClassSerializerInterceptor)
   public createUsers(@Body() createUserDto: CreateUserDto) {
     // console.log(typeof createUserDto, createUserDto instanceof CreateUserDto);
 

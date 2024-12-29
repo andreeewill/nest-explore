@@ -42,7 +42,7 @@ export class PostsController {
     description: 'You get a 201 response if your post is created successfully',
   })
   @Post()
-  // @UseFilters(HttpExceptionFilter)
+  @UseFilters(HttpExceptionFilter)
   public createPost(
     @Body() createPostDto: CreatePostDto,
     @ActiveUser() user: ActiveUserData,

@@ -42,7 +42,6 @@ export class AuthenticationGuard implements CanActivate {
 
     // loop guards canActivate
     for (const instance of guards) {
-      console.log(instance);
       const instances = Array.isArray(instance) ? instance : [instance];
 
       // instances.forEach((guard) => guard.canActivate(context));
@@ -51,7 +50,6 @@ export class AuthenticationGuard implements CanActivate {
           fn.canActivate(context),
         ).catch(() => false);
 
-        console.log(canActivate);
         if (canActivate) return true;
       }
     }

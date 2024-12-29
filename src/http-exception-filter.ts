@@ -10,6 +10,7 @@ import { Request, Response } from 'express';
 export class HttpExceptionFilter implements ExceptionFilter {
   catch(exception: HttpException, host: ArgumentsHost) {
     console.log('execption', exception);
+    console.log('exception response', exception.cause);
 
     const ctx = host.switchToHttp();
     const response = ctx.getResponse<Response>();

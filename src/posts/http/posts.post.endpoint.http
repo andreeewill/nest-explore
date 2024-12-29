@@ -4,7 +4,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjgsImVtYWlsI
 
 {
   "title": "What's new with NestJS three",
-  "postType": "post",
+  "postType": "posdddt",
   "slug": "new-with-nestjs-16",
   "status": "draft",
   "content": "test content",

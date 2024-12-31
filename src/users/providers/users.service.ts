@@ -9,13 +9,13 @@ import {
   HttpException,
   HttpStatus,
 } from '@nestjs/common';
-import { ConfigService, ConfigType } from '@nestjs/config';
+// import { ConfigService, ConfigType } from '@nestjs/config';
 
 import { User } from '../user.entity';
 import { GetUsersParamDto } from '../dtos/get-users-param.dto';
 import { CreateUserDto } from '../dtos/create-user.dto';
-import { AuthService } from 'src/auth/providers/auth.service';
-import profileConfig from '../config/profile.config';
+// import { AuthService } from 'src/auth/providers/auth.service';
+// import profileConfig from '../config/profile.config';
 import { UsersCreateManyProvider } from './users-create-many.provider';
 import { CreateManyUsersDto } from '../dtos/create-many-users.dto';
 import { CreateUserProvider } from './create-user.provider';
@@ -36,20 +36,20 @@ export class UsersService {
   constructor(
     // ENV
     // private readonly configService: ConfigService,
-    @Inject(profileConfig.KEY)
-    private readonly profileConfiguration: ConfigType<typeof profileConfig>,
+    // @Inject(profileConfig.KEY)
+    // private readonly profileConfiguration: ConfigType<typeof profileConfig>,
 
     // Inject repository
     @InjectRepository(User)
     private usersRepository: Repository<User>,
 
-    @Inject(forwardRef(() => AuthService))
-    private readonly authService: AuthService,
+    // @Inject(forwardRef(() => AuthService))
+    // private readonly authService: AuthService,
 
     /**
      * Inject data source
      */
-    private readonly dataSource: DataSource,
+    // private readonly dataSource: DataSource,
 
     /**
      * Inject usersCreateManyProvider
